@@ -7,6 +7,8 @@ class Item < ApplicationRecord
   has_one_attached  :image
 
   def image_url
+    debugger
+    puts "hi mom"
     rails_blob_path(image, only_path: true)
   end
 
